@@ -184,11 +184,11 @@
 // the pointer lands on by computing the exact stop angle.
 // ─────────────────────────────────────────────────────────────────────────────
 
-const THANKYOU = { label: "多謝惠顧", name: "多謝惠顧", emoji: "🙏", color: "#A8D8A8", isThankyou: true };
-const S1       = { label: "Surprise",  name: "森美同款飲料一盒",     emoji: "🥤", color: "#FF6EB4" };
-const S2       = { label: "Surprise",  name: "BEYOND 蔥油雞一客",    emoji: "🍗", color: "#FFB830" };
-const S3       = { label: "Surprise",  name: "SERVICING 林家謙一個", emoji: "🎤", color: "#B06DFF" };
-const S4       = { label: "Accio",     name: "Accio 魔法棒",         emoji: "🪄", color: "#4A2C8F" };
+const THANKYOU = { label: "多謝參與", name: "多謝參與", emoji: "🙏", color: "#A8D8A8", isThankyou: true };
+const S1       = { label: "Birthday",  name: "電台KOL體驗 一次",     emoji: "🥤", color: "#FF6EB4" };
+const S2       = { label: "Timothy",  name: "BEYOND蔥油雞 一客",    emoji: "🍗", color: "#FFB830" };
+const S3       = { label: "Happy",  name: "SERVICING林家謙 一個", emoji: "🎤", color: "#B06DFF" };
+const S4       = { label: "Tong",     name: "ACCIO速速前魔杖 一支",         emoji: "🪄", color: "#4A2C8F" };
 
 // 6 total spins: 多謝, S1, S2, 多謝, S3, S4
 const SPIN_SEQUENCE = [
@@ -377,10 +377,10 @@ function showModal(prize, round) {
   if (prize.isThankyou) {
     box.className = 'modal thankyou';
     document.getElementById('modalBurst').textContent = '🙏';
-    document.getElementById('modalTitle').textContent = '多謝惠顧！';
+    document.getElementById('modalTitle').textContent = '多謝參與！';
     document.getElementById('modalRound').textContent = `Round ${round} of ${totalSpins}`;
     document.getElementById('modalEmoji').textContent = '🙏';
-    document.getElementById('modalPrize').textContent = '多謝惠顧';
+    document.getElementById('modalPrize').textContent = '多謝參與';
     document.getElementById('modalCongrats').textContent = 'Better luck next time! 🍀';
   } else {
     box.className = 'modal';
